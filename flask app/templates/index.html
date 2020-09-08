@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	</head>
+
+	<h1>
+        The Recommender System
+	</h1>
+	<br><br>
+<div>
+	<div>
+	<h3 class="col-4 col-form-label" for="text">Get Personalized Suggestions</h3>
+	<form class="border border p-3" action="../suggestions" method="get">
+		<label class="col-4 col-form-label" for="text">User Id:</label>
+		<br><input type="text" id="userid" name="userid">
+		<br>
+		<br>
+		<button class="btn btn-primary" type="submit" value="Submit"> Submit </button>
+	</form>
+</div>
+</div>
+<br><br>
+<div>
+	<h3 class="col-4 col-form-label" for="text">Get Top Suggestions</h3>
+	<form class="border border p-3" action="../topsuggestions" method="get">
+		<button class="btn btn-primary" type="submit" value="Submit"> Submit </button>
+	</form>
+</div>
+
+</html>

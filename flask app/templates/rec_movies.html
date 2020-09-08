@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	</head>
+<div>
+    <center>
+        <table border=1 style="float: left;margin-right:60px">
+            <tr>
+		    <td><h2>User based Movies</h2></td>
+            </tr>
+
+            {% for i in range(0,len1) %}
+            <tr>
+                <td>{{list[i][0]}}</td>
+                <td><img class="rounded mx-auto d-block" src={{list[i][1]}} width="150" height="100"></td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</div>
+
+<div>
+    <center>
+        <table border=1 style="float: left;">
+            <tr>
+		    <td><h2>Top 15 Movies</h2></td>
+
+            </tr>
+            {% for i in range(0,len2) %}
+            <tr>
+                <td>{{list2[i][0]}}</td>
+                <td><img class="rounded mx-auto d-block" src={{list2[i][1]}} width="150" height="100"></td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</div>
+</html>

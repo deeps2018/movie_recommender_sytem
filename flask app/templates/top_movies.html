@@ -1,0 +1,19 @@
+<html>
+
+<div>
+    <center>
+        <table border=1 style="float: left;">
+            <tr>
+		    <td><h2>Top 15 Movies</h2></td>
+
+            </tr>
+            {% for i in range(0,len2) %}
+            <tr>
+                <td>{{list2[i][0]}}</td>
+                <td><img src={{list2[i][1]}} width="150" height="100"></td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</div>
+</html>
